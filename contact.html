@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paws R Us :: Contact</title>
+    <meta name="description" content="Pet adoption agency from Wisconsin.">
+    <link rel="stylesheet" href="adopt.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav role="main">
+    <a href="index.html"><img alt="Home" src="/img/home.png" width="70vh" height="70vh"></a>
+    <a href="dogs.html"><img alt="Dogs" src="/img/doghead.png" width="70vh" height="70vh"></a>
+    <a href="cats.html"><img alt="Cats" src="/img/cathead.png" width="70vh" height="70vh"></a>
+    <a href="rabbits.html"><img alt="Rabbits" src="/img/rabbithead.png" width="70vh" height="70vh"></a>
+    <a href="contact.html"><img alt="Contact" src="/img/contact.png" width="70vh" height="50vh"></a>
+</nav>
+<header>
+    <h1><a href="index.html">Pets R Us</a></h1>
+</header>
+<nav role="sub">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dogs.html">Dogs</a></li>
+        <li><a href="cats.html">Cats</a></li>
+        <li><a href="rabbits.html">Rabbits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<div id="contacthero"></div>
+<div id="wrapper">
+    <main>
+        <h2>Contact Pets R Us</h2>
+        <p>Required fields are marked with an asterisk *</p><br>
+        <!-- Below is where I would change this to my proper webserver.
+          I left the yoga one in just to prove everything is saved to a post. -->
+        <form action="https://webdevbasics.net/scripts/yoga.php" method="post">
+            <label for="myName">* Name:</label>
+            <input type="text" name="myName"  id ="myName" required><br>
+            <label for="email">* E-Mail:</label>
+            <input type="email" id ="email" name="email" required ><br>
+            <label for="myReferral">How did you hear about us?</label>
+            <select name="text" id ="myReferral">
+                <option value ="google">Google</option>
+                <option value="bing">Bing</option>
+                <option value="facebook">Facebook</option>
+                <option value="friend">Friend</option>
+                <option value="radio ad">Radio Ad</option>
+            </select><br>
+            <label for="myComments">* Comments:</label>
+            <textarea name="myComments" id ="myComments" rows="2" cols="20" required ></textarea><br>
+            <button type="submit">Send Now</button>
+        </form>
+    </main><br>
+</div>
+<footer>
+    <br>Copyright &copy; 2022 Pets R Us<br>
+    <a href="mailto:zabinskijacob@gmail.com">jacob@zabinski.com</a><br>
+    <a href="privacy.html">Our Privacy Policy</a>
+</footer>
+</body>
+</html>
